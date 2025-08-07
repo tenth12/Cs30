@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าขายของที่ระลึก</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="flex justify-end">
+        <a href="admin.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">ไปยังหน้า Admin</a>
+    </div>
+    <div class="container mx-auto bg-white p-6 rounded shadow-md">
+        <h1 class="text-2xl font-bold mb-4">แบบฟอร์ม ขายของที่ระลึก 30ปี</h1>
+        <form action="" method="post" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label for="fullname" class="block text-gray-700 text-sm font-bold mb-2">ชื่อ - นามสกุล</label>
+                <input type="text" name="fullname" id="fullname" placeholder="ชื่อ - นามสกุล" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="address" class="block text-gray-700 text-sm font-bold mb-2">ที่อยู่</label>
+                <input type="text" name="address" id="address" placeholder="ที่อยู่" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="tel" class="block text-gray-700 text-sm font-bold mb-2">เบอร์โทรศัพท์</label>
+                <input type="tel" name="tel" id="tel" placeholder="เบอร์โทรศัพท์" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="md:col-span-2">
+                <label for="prdname" class="block text-gray-700 text-sm font-bold mb-2">เสื้อครบรอบ 30 ปี สาขาวิทยาการคอมพิวเตอร์ ม.แม่โจ้</label>
+                <img src="/30_cs.jpg" alt="เสื้อที่ระลึก" class="w-48">
+            </div>
+            
+            <div>
+                <label for="size" class="block text-gray-700 text-sm font-bold mb-2">ขนาด</label>
+                <select name="size" id="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="">-- กรุณาเลือกขนาด --</option>
+                    <option value="ss">SS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                    <option value="3xl">3XL</option>
+                    <option value="4xl">4XL</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="prdcolor" class="block text-gray-700 text-sm font-bold mb-2">สีเสื้อ</label>
+                <div class="flex items-center">
+                    <input type="radio" name="prdcolor" value="white" class="mr-2">
+                    <label for="white" class="mr-4">โปโลสีขาว</label>
+                    <input type="radio" name="prdcolor" value="black" class="mr-2">
+                    <label for="black">โปโลสีกรม</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="quantity" class="block text-gray-700 text-sm font-bold mb-2">จำนวนสินค้า</label>
+                <input type="number" name="quantity" id="quantity" value="0" min="0" max="1000" step="1" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div>
+                <label for="purchasedate" class="block text-gray-700 text-sm font-bold mb-2">วันที่ซื้อ</label>
+                <input type="date" name="purchasedate" id="purchasedate" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div>
+                <label for="delivery" class="block text-gray-700 text-sm font-bold mb-2">ช่องทางการจัดส่ง</label>
+                <div class="flex items-center">
+                    <input type="radio" name="delivery" value="delivery" class="mr-2">
+                    <label for="delivery" class="mr-4">จัดส่ง</label>
+                    <input type="radio" name="delivery" value="pickup" class="mr-2">
+                    <label for="pickup">รับเอง</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="payment" class="block text-gray-700 text-sm font-bold mb-2">วิธีการชำระเงิน</label>
+                <div class="flex items-center">
+                    <input type="radio" name="payment" value="cash" class="mr-2">
+                    <label for="cash" class="mr-4">เงินสด</label>
+                    <input type="radio" name="payment" value="credit" class="mr-2">
+                    <label for="credit">บัตรเครดิต</label>
+                </div>
+            </div>
+
+            <div class="md:col-span-2">
+                <label for="address_pay" class="block text-gray-700 text-sm font-bold mb-2">นายภานุวัฒน์ เมฆะ และนายอรรถวิท ชังคมานนท์ และนางปราณี กันธิมา (ชมรมวิทยาการคอมพิวเตอร์) เลขบัญชี 678-0-07822-3 ธนาคารกรุงเทพ สาขามหาวิทยาลัยแม่โจ้</label>
+                <img src="/unnamed.png" alt="บัญชีธนาคาร" class="w-48">
+            </div>
+            
+            <div>
+                <label for="prdimage" class="block text-gray-700 text-sm font-bold mb-2">ส่งหลักฐานการชำระเงิน</label>
+                <input type="file" name="prdimage" id="prdimage" accept="image/*" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="md:col-span-2">
+                <input type="submit" value="บันทึก" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                <input type="reset" value="ล้างข้อมูล" class="bg-gray-400 hover:bg-gray-500 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
